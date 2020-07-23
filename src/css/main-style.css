@@ -1,0 +1,75 @@
+@import "./controls.css";
+:root {
+    --main-color: rgb(178 72 72);
+    --div-color: rgba(0, 0, 0, 0.5);
+    --space-between: 20px;
+}
+
+body {
+    background: var(--main-color);
+}
+
+.main-div {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head-name {
+    height: 7.5%;
+    width: 25%;
+    background-color: var(--div-color);
+}
+
+.main-controls {
+    width: 100%;
+    height: calc(100% - 7.5% - var(--space-between));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav {
+    width: 25%;
+    height: 100%;
+    background-color: var(--div-color);
+}
+
+.article {
+    width: calc(75% - var(--space-between));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar-div {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.events-div {
+    height: calc(25% - var(--space-between));
+    width: 100%;
+    background: var(--div-color);
+}
+
+.month-div {
+    width: 70%;
+    height: 100%;
+    background: var(--div-color);
+}
+
+.today-div {
+    width: calc(30% - var(--space-between));
+    height: 100%;
+    background: var(--div-color);
+}
